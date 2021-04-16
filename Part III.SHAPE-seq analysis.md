@@ -1438,7 +1438,8 @@ data_uvr.loc[(data_wt['hit_f']>2)&(data_wt['hit_z']>2),:].to_csv('/data/TA_QUIZ_
 `merge_data_WT_2.csv`：WT型，hit level>2的汇总结果
 `merge_data_UVR8_2.csv`：UVR8型，hit level>2的汇总结果
 
-# 3) motif analysis
+
+# 3) motif analysis(选做/了解即可)
 我们根据结构变化区域进行motif分析，主要分为三个部分：
 - de novo sequence motif discovery
 - known structure motif
@@ -1544,16 +1545,21 @@ f.close()
 WT样本的:`merge_down.fasta`、`merge_up.fasta`
 UVR8突变体的:`merge_down.fasta`、`merge_up.fasta`
 
-![[merge_down.fasta.png]]
+![merge_down.fasta.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/b5e34a112131e0e0920d5213a5267aacb3e6e907/Images/merge_down.fasta.png)
+
 第一行为转录本名称，所在部位、起始位置、上调还是下调。
 第二行为具体的核苷酸序列。
 
 ### 3.a.2）MEME在线motif分析
 我们利用MEME在线版进行motif分析，地址为[http://meme-suite.org/tools/meme](http://meme-suite.org/tools/meme)。
 使用MEME的Motif discovery工具，预测输入序列上的motif信息
-![[MEME.png]]
+
+![MEME.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/b5e34a112131e0e0920d5213a5267aacb3e6e907/Images/MEME.png)
+
 我们上传merge_down.fasta、merge_up.fasta后提交运算。
-![[discovery_motif.png]]
+
+![discovery_motif.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/b5e34a112131e0e0920d5213a5267aacb3e6e907/Images/discovery_motif.png)
+
 在得到的结果中我们根据Evalue进行筛选，Sites为找到的motif在几个结构改变区域中出现过，由此可以计算出该motif的覆盖率。我们选择覆盖率较高的motif，这里取大于4%。
 
 ## 3.b) Know structure motif
@@ -2135,7 +2141,8 @@ java -jar /data/zhaoyizi/software/beam/BEAM_release2.5.0.jar -f merge_up_nouv_re
 我们根据`merge_up_nouv_ready_summary.txt`文件可以得到过滤后motif的`pvalueMW'，'AUC`，`qBEAR`。
 另外我们在`~/results/merge_down_nouv_ready/benchmark/motifs/*_ready_m1_run1.txt`中找到每个motif对应的结果改变区域的具体信息。
 
-![[weblogo结构绘图.png]]
+![weblogo结构绘图.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/b5e34a112131e0e0920d5213a5267aacb3e6e907/Images/weblogo%E7%BB%93%E6%9E%84%E7%BB%98%E5%9B%BE.png)
+
 **3.绘图**
 我们利用weblogo进行结构motif绘图。我们对每个过滤后的motif进行绘图。
 ```linux
@@ -2147,7 +2154,7 @@ weblogo -a 'ZAQXSWCDEVFRBGTNHY' -f merge_up_ck_ready_m1_run1_wl.fa  -D fasta \
 -C limegreen NHY 'InternalLoopBranch'
 ```
 
-![[weblogo3.6.0.png]]
+![weblogo3.6.0.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/b5e34a112131e0e0920d5213a5267aacb3e6e907/Images/weblogo3.6.0.png)
 
 图中为每个位点qBEAR，不同字母的大小代表这个位点为该字母的可能性（因为motif允许一定错配），字母含义为motif结构编码，Z:big Stem,A:medial Stem,Q:small Stem,X:big Loop,S:medial Loop,W:small Loop,C:big InternalLoop,D:medial InternalLoop,E:small InternalLoop,V:big StemBranch,F:medial StemBranch,R:small StemBranch,B:Bulge,G:BulgeBranch,T:Branching,N:big InternalLoopBranch,H:medial InternalLoopBranch,Y:small InternalLoopBranch
 
