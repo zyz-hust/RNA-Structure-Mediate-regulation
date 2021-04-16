@@ -9,7 +9,7 @@ RNA的转录后调控对于基因表达来说是至关重要的，单链RNA由�
 本Quiz依托于Lulab现有的一些研究方法，结合与上海生命科学研究院植物生理生态研究所的刘宏涛老师实验室合作产生的SHAPE-MaP测序数据及Ribo-seq测序数据，测定在UVB光照前后，拟南芥可能产生的各种转录后调控，结构变化以及最终导致的翻译效率的变化。          通过各种已有的工具和统计学分析方法，我们希望将两种条件下的差异剪接，差异表达，结构变化等信息与差异翻译联系起来，希望从中找寻到具有生物学意义的结果，例如建立与UVR8或光照通路密切相关的RNA二级结构动态模型，探究结构展开动力学与翻译效率之间的关系。
 
 ## 1) 总体流程图
-![RNA regulation protocol2.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/baa37b5eb26fd367ce321c457642f89b9a8cb97e/Images/RNA%20regulation%20protocol2.png)
+![10.1.1.RNA_regulation_protocol2.png](../../.gitbook/assets/10.1.1.RNA_regulation_protocol2.png)
 
 ### Part I. RNA-seq analysis
 - 1 完成样本的**Reads Processing、Remove RNA and Mapping**工作，得到Mapped reads(bam)并绘制质量控制相关图。
@@ -68,7 +68,7 @@ Revealed by High-Resolution SHAPE Probing](https://www.cell.com/cell/fulltext/S0
 ## 3）数据介绍
 数据来自于我们合作的上海生命科学研究院生理生态研究所的刘宏涛研究员产生的部分SHAPE-MaP测序数据及Ribo-seq测序数据。实验设计如下
 
-![Arabidopsis UVB protocal.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/a0a18cc17de65e83b8181d09bd5311ffb290e21f/Images/Arabidopsis%20UVB%20protocal.png)
+![10.1.2.Arabidopsis_UVB_protocal.png](../../.gitbook/assets/10.1.2.Arabidopsis_UVB_protocal.png)
 
 实验使用两种植株，分别是Columbia(Col-0)做为野生型，以及对uvr8基因进行转移DNA插入突变的uvr8突变株。分别设置实验组UVR8和对照组WT。实验组放在313-315nm的窄带UV-B紫外光下处理1h，而对照组不做紫外光处理，在白光下处理1h，共产生四种不同处理状态的植株——WT_UV-(野生型，白光处理)、UVR8_UV-(UVR8突变型，白光处理)、WT_UV+(野生型,UV-B处理)、UVR8_UV+(UVR8突变型，UV-B处理)。
 
