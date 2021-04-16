@@ -15,10 +15,10 @@ Ribo-seq测序数据的`fastqc`、`trimmed`、`remove_rRNA`和`mapping`流程与
 ## 1a) QC-Trim-QC
 ### 1a.1) Step one - QC of raw data
 **Input：**
-
+`/data/TA_QUIZ_RNA_regulation/data/riboshape_liulab_batch4/Ribo-seq`下
 |data type|path|
 |:------:|:------:|
-|raw data|uvr8\*.fq.gz;wt\*.fq.gz|
+|raw data|~/uvr8\*.fq.gz;~/wt\*.fq.gz|
 
 **Software/Parameters：**
 `fastqc`
@@ -38,10 +38,10 @@ Ribo-seq测序数据的`fastqc`、`trimmed`、`remove_rRNA`和`mapping`流程与
 
 ### 1a.2) Step two -cut adaptor & trim long read
 **input：**
-
+`/data/TA_QUIZ_RNA_regulation/data/riboshape_liulab_batch4/Ribo-seq`下
 |data type|path|
 |:------:|:------:|
-|raw data|uvr8\*.fq.gz;wt\*.fq.gz|
+|raw data|~/uvr8\*.fq.gz;~/wt\*.fq.gz|
 
 **Software/Parameters：**
 
@@ -334,7 +334,9 @@ write.table(results_tab,"~/wt.uvb-vs-nouvb.TE_new.xls",quote=F,sep="\t")
 ```
 
 **output：**
+
 ![wt.uvb-vs-nouvb.TE_new.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/11f6ed84ec5d823fbb6a6dcab14d5f87fe9eb707/Images/wt.uvb-vs-nouvb.TE_new.png)
+
 ### 3.c.2) UVR8样本分析
 **input：**
 `UVR_count.txt`、`count_CDS.txt`
@@ -358,7 +360,9 @@ write.table(results_tab,"~/uvr8.uvb-vs-nouvb.TE_new.xls",quote=F,sep="\t")
 ```
 
 **output：**
+
 ![uvr8.uvb-vs-nouvb_new.TE.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/11f6ed84ec5d823fbb6a6dcab14d5f87fe9eb707/Images/uvr8.uvb-vs-nouvb_new.TE.png)
+
 包含所有基因结果，未进行差异过滤。
 
 
