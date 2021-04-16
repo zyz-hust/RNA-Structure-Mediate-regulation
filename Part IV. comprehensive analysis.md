@@ -202,11 +202,11 @@ f.close()
 我们利用MEME在线版进行motif分析，地址为[http://meme-suite.org/tools/meme](http://meme-suite.org/tools/meme)。
 使用MEME的Motif discovery工具，预测输入序列上的motif信息
 
-![MEME.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/3c7275395a6a89cba38a3e19ce5135f990c9f9e8/Images/MEME.png)
+![10.4.7.MEME.png](../../.gitbook/assets/10.4.7.MEME.png)
 
 我们上传`merge_TE_up_5UTR.fasta`/`merge_TE_down_5UTR.fasta`后提交运算。
 
-![discovery_motif.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/3c7275395a6a89cba38a3e19ce5135f990c9f9e8/Images/discovery_motif.png)
+![10.4.8.discovery_motif.png](../../.gitbook/assets/10.4.8.discovery_motif.png)
 
 在得到的结果中我们根据Evalue进行筛选，Sites为找到的motif在几个结构改变区域中出现过，由此可以计算出该motif的覆盖率。我们选择覆盖率较高的motif，这里取大于4%。
 
