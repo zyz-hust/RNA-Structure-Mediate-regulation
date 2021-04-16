@@ -296,7 +296,7 @@ RiboCode \
 这里建议使用 `python`的`pandas`包来提取文件信息。
 `count_CDS.txt`的每行为一个基因，每列为一个样本，矩阵中间的数据为表达值。
 示例：
-![count_CDS.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/11f6ed84ec5d823fbb6a6dcab14d5f87fe9eb707/Images/count_CDS.png)
+![10.3.1.count_CDS.png](../../.gitbook/assets/10.3.1.count_CDS.png)
 
 ## 3.b) Ribo-seq 汇总
 `Ribo-seq`
@@ -308,7 +308,7 @@ RiboCode \
 
 示例：
 
-![WT_count.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/11f6ed84ec5d823fbb6a6dcab14d5f87fe9eb707/Images/WT_count.png)
+![10.3.2.WT_count.png](../../.gitbook/assets/10.3.2.WT_count.png)
 
 ## 3.c) Xtail 分析
 使用R包`xtail`进行差异翻译分析。
@@ -336,7 +336,7 @@ write.table(results_tab,"~/wt.uvb-vs-nouvb.TE_new.xls",quote=F,sep="\t")
 
 **output：**
 
-![wt.uvb-vs-nouvb.TE_new.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/11f6ed84ec5d823fbb6a6dcab14d5f87fe9eb707/Images/wt.uvb-vs-nouvb.TE_new.png)
+![10.3.3.wt.uvb-vs-nouvb.TE_new.png](../../.gitbook/assets/10.3.3.wt.uvb-vs-nouvb.TE_new)
 
 ### 3.c.2) UVR8样本分析
 **input：**
@@ -362,7 +362,7 @@ write.table(results_tab,"~/uvr8.uvb-vs-nouvb.TE_new.xls",quote=F,sep="\t")
 
 **output：**
 
-![uvr8.uvb-vs-nouvb_new.TE.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/11f6ed84ec5d823fbb6a6dcab14d5f87fe9eb707/Images/uvr8.uvb-vs-nouvb_new.TE.png)
+![10.3.4.uvr8.uvb-vs-nouvb_new.TE.png](../../.gitbook/assets/10.3.4.uvr8.uvb-vs-nouvb_new.TE)
 
 包含所有基因结果，未进行差异过滤。
 
