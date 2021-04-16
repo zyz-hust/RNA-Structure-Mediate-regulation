@@ -9,7 +9,7 @@ RNA的转录后调控对于基因表达来说是至关重要的，单链RNA由�
 本Quiz依托于Lulab现有的一些研究方法，结合与上海生命科学研究院植物生理生态研究所的刘宏涛老师实验室合作产生的SHAPE-MaP测序数据及Ribo-seq测序数据，测定在UVB光照前后，拟南芥可能产生的各种转录后调控，结构变化以及最终导致的翻译效率的变化。          通过各种已有的工具和统计学分析方法，我们希望将两种条件下的差异剪接，差异表达，结构变化等信息与差异翻译联系起来，希望从中找寻到具有生物学意义的结果，例如建立与UVR8或光照通路密切相关的RNA二级结构动态模型，探究结构展开动力学与翻译效率之间的关系。
 
 ## 1) 总体流程图
-![RNA regulation protocol2.png](Images/Arabidopsis UVB protocal.png)
+![RNA regulation protocol2.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/baa37b5eb26fd367ce321c457642f89b9a8cb97e/Images/RNA%20regulation%20protocol2.png)
 
 ### Part I. RNA-seq analysis
 - 1 完成样本的**Reads Processing、Remove RNA and Mapping**工作，得到Mapped reads(bam)并绘制质量控制相关图。
