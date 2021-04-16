@@ -218,7 +218,7 @@ STAR \
 
 这里建议使用 `python`的`pandas`包来提取文件信息。
 示例：
-![count_matrix.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/5c4437ceec0dabb4b3b6a879167c157e13454eed/Images/count_matrix.png)
+![10.2.1.count_matrix.png](../../.gitbook/assets/10.2.1.count_matrix.png)
 
 ## 2.c) Differential expression analysis
 这里分别使用`edgeR`和`DESeq2`来进行差异表达分析。
@@ -286,7 +286,7 @@ diff_gene_deseq_col0 <- subset(res,padj<0.05&(log2FoldChange>1|log2FoldChange< -
 `wt_gene_list.txt`:差异表达的基因列表
 `wt_rawdata.csv`:DESeq2产生的原始结果文件。
 **results:**
-![DESeq2_result.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/5c4437ceec0dabb4b3b6a879167c157e13454eed/Images/DESeq2_result.png)
+![10.2.2.DESeq2_result.png](![](../../.gitbook/assets/10.2.2.DESeq2_result.png))
 
 ### 2.c.2) edgeR 进行差异表达分析
 **input :**
@@ -336,7 +336,7 @@ edgeR_result <- topTags(lrt,n=nrow(dgList))
 ```
 
 **results：**
-![edgeR_result.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/63921dfe427314d5d9f1cec55359f5903fa543c1/Images/edgeR_result.png)
+![10.2.3.edgeR_result.png](../../.gitbook/assets/10.2.3.edgeR_result.png)
 每列依次是`genes`、`logFC`、`logCPM`、`LR`、`PValue`和`FDR`。可根据`logFC`和`FDR`的值对结果进行筛选。
 
 最终的结果如下：
@@ -414,9 +414,11 @@ XX 指代SE\RI\MXE\A5SS\A3SS 五项可变剪切时间。
 **XX.MATS.JC.txt中包含的信息比较多，以SE.MATS.JC.txt为例：**
 * 1. 1-5列分别为：ID、GeneID、geneSymbol、chr、strand
 * 2. 6-11列分别为外显子位置信息：分别为exonStart_0base，exonEnd，upstreamES，upstreamEE，downstreamES，downstreamEE。
-![skipped_exon.png.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/63921dfe427314d5d9f1cec55359f5903fa543c1/Images/skipped_exon.png.png)
+![10.2.4.skipped_exon.png](../../.gitbook/assets/10.2.4.skipped_exon.png)
 * 3. 13-16列  展示两组样品在IJC(inclusion junction) 和SJC(skipping junction counts)下的counts数，重复样本的结果以逗号分隔：列名分别为IJC_SAMPLE_1，SJC_SAMPLE_1，IJC_SAMPLE_2，SJC_SAMPLE_2。
-![skipped exon.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/63921dfe427314d5d9f1cec55359f5903fa543c1/Images/skipped%20exon.png)
+
+![10.2.5.skipped_exon_AS.png](../../.gitbook/assets/10.2.5.skipped_exon_AS.png)
+
 * 4. lncFormLen和SkipFormLen分别是inclusion form和skipping form的有效长度值,虽然有计算公式，还是要根据reads跨越时的具体情况来定。
 * 5. IncLevel 可被认作为exon inclusion level(φ),是exon inclusion isoform在总(Exon inclusion isoform +exon skipping isoform 所占比例)
 * 6. IncLevelDifference则是指两组样本IncLevel的差异，如果一组内多个样本，那么则是各自组的均值之间差值。
@@ -444,7 +446,9 @@ python splice_sig_psi.py PValue 0.05 0.1 wt.UVB-vs-noUVB wt.UVB-vs-noUVB_filtere
 
 ### 3.c.1) DAVID Functional Annotation Tool
 点击`shortcut to DAVID Tool`->`Function annotation clustering` 左侧出现`Upload Gene List`界面。
-![DAVID.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/63921dfe427314d5d9f1cec55359f5903fa543c1/Images/DAVID.png)
+
+![10.2.6.DAVID.png](../../.gitbook/assets/10.2.6.DAVID.png)
+
 按照提示步骤提交文件即可，注：Step2选择`TAIR_ID`拟南芥基因ID，最后`Submit list`得到功能注释结果。
 
 
