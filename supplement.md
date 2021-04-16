@@ -1,31 +1,29 @@
 # 0. 编程工具介绍
----
 由于本次作业需要一定的计算资源支持，我们为各个小组提供了集群账户。大作业需要使用python完成，推荐读者使用python3。建议使用pycharm进行代码的编辑、运行和调试。可以参考以下的`PyCharm 连接远程服务器`，ssh远程连接P-cluster。
 
----
 ## 1) PyCharm 连接远程服务器
 注：只有professional版才有ssh 远程连接的功能，社区版没有。
 可参考[学生如何免费试用Pycharm专业版](https://blog.csdn.net/weixin_45459911/article/details/104767525)
 
 ### 1.1) 打开PyCharm 的Preferences
-![[Pycharm的Preferecence.png]]
+![Pycharm的Preferecence.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/30a8f2cc44ea0a77c60e923505c5349cf27a5d62/Images/Pycharm%E7%9A%84Preferecence.png)
 
 ### 1.2) 设置远程服务器&设置账号密码
-![[设置远程服务器.png]]
+![设置远程服务器.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/30a8f2cc44ea0a77c60e923505c5349cf27a5d62/Images/%E8%AE%BE%E7%BD%AE%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8.png)
 - Build,Execition,Deployment -> Deployment。
 - 点击左上角的“+”键，给server取名。
 - `type` 选择 `SFTP`。
 - 点击`SSH configuration` 设置`Host`、`Username`、`password`。
-![[SSH Configuration.png]]
+![SSH Configuration.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/30a8f2cc44ea0a77c60e923505c5349cf27a5d62/Images/SSH%20Configuration.png)
 - `Test Connection`检查连接是否正常，如出现问题，可能是上步SSH设置问题。
 - 设置`Root path`,点击上方的`mappings`,设置本地映射目录和远程映射目录。
 - 设置好后`apply`
 
 ### 1.3) 设置python解释器
-![[设置python解释器.png]]
+![设置python解释器.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/30a8f2cc44ea0a77c60e923505c5349cf27a5d62/Images/%E8%AE%BE%E7%BD%AEpython%E8%A7%A3%E9%87%8A%E5%99%A8.png)
 - Preferences -> Project:xxxx -> Python interpreter
 - 点击设置，再点击`add`,在`Python Interpreter`中设置调用的python路径
-![[ssh Interpreter.png]]
+![ssh Interpreter.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/30a8f2cc44ea0a77c60e923505c5349cf27a5d62/Images/ssh%20Interpreter.png)
 - 点击`SSH Interpreter`,选择`Existing server configuration`
 - 选择我们刚刚设置好的`SSH configuration`
 - `next`,实现PyCharm远程服务器的连接。
