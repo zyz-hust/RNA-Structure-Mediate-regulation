@@ -12,7 +12,7 @@ SHAPE-MaP测序结果中不加NAI的样本可以作为RNA-seq样本，即`/data/
 
 |data type|path|
 |:------:|:------:|
-|raw data|~/UD\*.fastq.gz;~/CD\*.fastq.gz|
+|raw data|\~/UD\*.fastq.gz;\~/CD\*.fastq.gz|
 
 **Software/Parameters：**
 
@@ -38,7 +38,7 @@ SHAPE-MaP测序结果中不加NAI的样本可以作为RNA-seq样本，即`/data/
 
 |data type|path|
 |:------:|:------:|
-|raw data|~/UD\*.fastq.gz;~/CD\*.fastq.gz|
+|raw data|\~/UD\*.fastq.gz;\~/CD\*.fastq.gz|
 
 **Software/Parameters：**
 
