@@ -67,7 +67,7 @@ Revealed by High-Resolution SHAPE Probing](https://www.cell.com/cell/fulltext/S0
 
 ## 3）数据介绍
 数据来自于我们合作的上海生命科学研究院生理生态研究所的刘宏涛研究员产生的部分SHAPE-MaP测序数据及Ribo-seq测序数据。实验设计如下
-![[Arabidopsis UVB protocal.png]]
+![Arabidopsis UVB protocal.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/a0a18cc17de65e83b8181d09bd5311ffb290e21f/Images/Arabidopsis%20UVB%20protocal.png)
 
 实验使用两种植株，分别是Columbia(Col-0)做为野生型，以及对uvr8基因进行转移DNA插入突变的uvr8突变株。分别设置实验组UVR8和对照组WT。实验组放在313-315nm的窄带UV-B紫外光下处理1h，而对照组不做紫外光处理，在白光下处理1h，共产生四种不同处理状态的植株——WT_UV-(野生型，白光处理)、UVR8_UV-(UVR8突变型，白光处理)、WT_UV+(野生型,UV-B处理)、UVR8_UV+(UVR8突变型，UV-B处理)。
 
