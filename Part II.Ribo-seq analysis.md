@@ -41,7 +41,7 @@ Ribo-seq测序数据的`fastqc`、`trimmed`、`remove_rRNA`和`mapping`流程与
 `/data/TA_QUIZ_RNA_regulation/data/riboshape_liulab_batch4/Ribo-seq`下
 |data type|path|
 |:------:|:------:|
-|raw data|~/uvr8\*.fq.gz;~/wt\*.fq.gz|
+|raw data|\~/uvr8\*.fq.gz;\~/wt\*.fq.gz|
 
 **Software/Parameters：**
 
@@ -307,6 +307,7 @@ RiboCode \
 与上述相同,合并['wtnouvb1','wtnouvb2','wtnouvb3','wtuvb1','wtuvb2','wtuvb3','uvr8no1','uvr8no2','uvr8no3','uvr8uvb1','uvr8uvb2','uvr8uvb3']12个样本的`Gene id`和`counts`信息。得到`WT_count.txt`、`UVR_count.txt`。
 
 示例：
+
 ![WT_count.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/11f6ed84ec5d823fbb6a6dcab14d5f87fe9eb707/Images/WT_count.png)
 
 ## 3.c) Xtail 分析
