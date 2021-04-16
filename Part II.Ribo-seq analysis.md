@@ -18,7 +18,7 @@ Ribo-seq测序数据的`fastqc`、`trimmed`、`remove_rRNA`和`mapping`流程与
 `/data/TA_QUIZ_RNA_regulation/data/riboshape_liulab_batch4/Ribo-seq`下
 |data type|path|
 |:------:|:------:|
-|raw data|~/uvr8\*.fq.gz;~/wt\*.fq.gz|
+|raw data|\~/uvr8\*.fq.gz;\~/wt\*.fq.gz|
 
 **Software/Parameters：**
 `fastqc`
