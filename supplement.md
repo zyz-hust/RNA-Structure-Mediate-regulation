@@ -6,24 +6,33 @@
 可参考[学生如何免费试用Pycharm专业版](https://blog.csdn.net/weixin_45459911/article/details/104767525)
 
 ### 1.1) 打开PyCharm 的Preferences
-![Pycharm的Preferecence.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/30a8f2cc44ea0a77c60e923505c5349cf27a5d62/Images/Pycharm%E7%9A%84Preferecence.png)
+
+![10.5.1.Pycharm_Preferecence.png](../../.gitbook/assets/10.5.1.Pycharm_Preferecence.png)
 
 ### 1.2) 设置远程服务器&设置账号密码
-![设置远程服务器.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/30a8f2cc44ea0a77c60e923505c5349cf27a5d62/Images/%E8%AE%BE%E7%BD%AE%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8.png)
+
+![10.5.2.setting_remote_server.png](../../.gitbook/assets/10.5.2.setting_remote_server.png)
+
 - Build,Execition,Deployment -> Deployment。
 - 点击左上角的“+”键，给server取名。
 - `type` 选择 `SFTP`。
 - 点击`SSH configuration` 设置`Host`、`Username`、`password`。
-![SSH Configuration.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/30a8f2cc44ea0a77c60e923505c5349cf27a5d62/Images/SSH%20Configuration.png)
+
+![10.5.3.SSH_Configuration.png](../../.gitbook/assets/10.5.3.SSH_Configuration.png)
+
 - `Test Connection`检查连接是否正常，如出现问题，可能是上步SSH设置问题。
 - 设置`Root path`,点击上方的`mappings`,设置本地映射目录和远程映射目录。
 - 设置好后`apply`
 
 ### 1.3) 设置python解释器
-![设置python解释器.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/30a8f2cc44ea0a77c60e923505c5349cf27a5d62/Images/%E8%AE%BE%E7%BD%AEpython%E8%A7%A3%E9%87%8A%E5%99%A8.png)
+
+![10.5.4.setting_python_explainer.png](../../.gitbook/assets/10.5.4.setting_python_explainer.png)
+
 - Preferences -> Project:xxxx -> Python interpreter
 - 点击设置，再点击`add`,在`Python Interpreter`中设置调用的python路径
-![ssh Interpreter.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/30a8f2cc44ea0a77c60e923505c5349cf27a5d62/Images/ssh%20Interpreter.png)
+
+![10.5.5.ssh_Interpreter.png](../../.gitbook/assets/10.5.5.ssh_Interpreter.png)
+
 - 点击`SSH Interpreter`,选择`Existing server configuration`
 - 选择我们刚刚设置好的`SSH configuration`
 - `next`,实现PyCharm远程服务器的连接。
