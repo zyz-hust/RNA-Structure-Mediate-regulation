@@ -1,7 +1,6 @@
 # 2.RNA Structure-Mediated regulation 
-*******
 ## RNA regulation : RNA Structure-Mediated Post-transcriptional regulations affect translation efficiency
-*******
+
 ## 0) 背景介绍
 RNA的转录后调控对于基因表达来说是至关重要的，单链RNA由于其不稳定性，总是倾向于形成有稳定的碱基互补配对的结构,其中最典型典型的就是茎环结构。不同的位置上的茎环结构的形成会直接影响到表达量，RNA分子的舒展程度可以很明显地影响核糖体沿RNA移动的过程。因此，RNA二级结构在不同条件下的转变最直接影响到的就是翻译过程。在以往的研究中发现，这种影响往往是介导转录调控(可变剪接AS、多聚腺苷酸加尾APA、嵌合体RNA等)进行的。
 
@@ -13,29 +12,29 @@ RNA的转录后调控对于基因表达来说是至关重要的，单链RNA由�
 ![[RNA regulation protocol2.png]]
 
 ### Part I. RNA-seq analysis
-- 1) 完成样本的**Reads Processing、Remove RNA and Mapping**工作，得到Mapped reads(bam)并绘制质量控制相关图。
-- 2) 完成**differential expression**分析
+- 1 完成样本的**Reads Processing、Remove RNA and Mapping**工作，得到Mapped reads(bam)并绘制质量控制相关图。
+- 2 完成**differential expression**分析
 	- 2.1) 计算RNA-seq reads count matrix
 	- 2.2) 利用DESeq2进行差异表达分析
 	- 2.3) 利用edgeR进行差异表达分析
-- 3) 完成**differential splicing**分析(选做)
+- 3 完成**differential splicing**分析(选做)
 	- 3.1) 利用rMATS计算splicing events
 	- 3.2) 对差异剪接基因进行通路注释并作图
 ### Part II. Ribo-seq analysis
-- 1) 完成样本的**Reads Processing、Remove RNA and Mapping**工作，得到Mapped reads(bam)并绘制质量控制相关图。
-- 2) ORF分析，计算Ribo-seq的reads count matrix
-- 3) 差异翻译效率分析
+- 1 完成样本的**Reads Processing、Remove RNA and Mapping**工作，得到Mapped reads(bam)并绘制质量控制相关图。
+- 2 ORF分析，计算Ribo-seq的reads count matrix
+- 3 差异翻译效率分析
 	- 3.1) 利用Xtail基于Ribo-seq的count matrix 和RNA-seq的count matrix计算差异翻译效率。为了方便对比RNAseq只统计CDS区域的reads。
 ### Part III. SHAPE-seq analysis
-- 1) 利用Shapemapper 进行数据预处理并计算每个转录本的reactivity
-- 2) 计算得到结构改变区域
+- 1 利用Shapemapper 进行数据预处理并计算每个转录本的reactivity
+- 2 计算得到结构改变区域
 	- 2.1）计算hit level，根据hit level分布确定阈值
 	- 2.2) 计算归一化因子，对Reactivity进行预处理和归一化。
 	- 2.3）计算滑动窗口Gini index，利用滑动窗口判断每个转录本加光前后的结构改变区域，对连续的滑动窗口进行合并，汇总结构。
 ### Part IV. comprehensive analysis
-- 1) 转录本丰度变化和翻译效率(TE)变化程度之间关系
-- 2) 转录本结构改变程度和翻译效率TE变化程度之间关系
-- 3) 翻译效率变化基因的motif分析
+- 1 转录本丰度变化和翻译效率(TE)变化程度之间关系
+- 2 转录本结构改变程度和翻译效率TE变化程度之间关系
+- 3 翻译效率变化基因的motif分析
 	- 3.1) TE上/下调的3'UTR和5'UTR的motif富集。
 	- 3.2) 富集的motif区域是否发生结构变化。 
 
