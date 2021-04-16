@@ -52,13 +52,13 @@ shapemapper \
 
 Ath_test_C1_1_transcript_id_profile.txt：
 
-![transcript_profile.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/dd00b99f4d5a0c0686afd9d91a025baff8096b6b/Images/transcript_profile.png)
+![10.4.1.transcript_profile.png](../../.gitbook/assets/10.4.1.transcript_profile.png)
 
 
 将C1_1的所有转录本的信息整合起来
 得到的整合文件`C1_1/final.modified_unmodified_new`如图所示：
 
-![final.modified_unmodified_new.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/dd00b99f4d5a0c0686afd9d91a025baff8096b6b/Images/final.modified_unmodified_new.png)
+![10.4.2.final.modified_unmodified_new.png](../../.gitbook/assets/10.4.2.final.modified_unmodified_new.png)
 
 文件的每列内容为`transcript_id`,`Nucleotide`,`Modified_mutations`,`Modified_effective_depth`,`Untreated_mutations`,`Untreated_effective_depth`。
 
@@ -75,13 +75,13 @@ S corresponds to a SHAPE modified sample, B to untreated.
 
 - Hit level
 
-![hit_level.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/dd00b99f4d5a0c0686afd9d91a025baff8096b6b/Images/hit_level.png)
+![10.4.3.hit_level.png](../../.gitbook/assets/10.4.3.hit_level.png)
 
 The hit level metric quantifies the total background-subtracted signal per nucleotide of transcript.
 
 - Gini index
 
-![Gini index.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/dd00b99f4d5a0c0686afd9d91a025baff8096b6b/Images/Gini%20index.png)
+![10.4.4.Gini index.png](../../.gitbook/assets/10.4.4.Gini index.png)
 
 We then applied these metrics to windows containing a total of 50 nucleotides Requiring a minimum number of 100 total reads, number of nan in reactivity less than 10%. 
 
@@ -232,7 +232,7 @@ plt.close()
 **result:**
 `2a.transcript_num_hit.png`：转录本个数随hit level 变化趋势图。
 
-![2a.transcript_num_hit.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/dd00b99f4d5a0c0686afd9d91a025baff8096b6b/Images/2a.transcript_num_hit.png)
+![10.4.5.transcript_num_hit.png](../../.gitbook/assets/10.4.5.transcript_num_hit.png)
 
 根据转录本个数变化趋势，我们取hit level大于2的转录本为可信转录本，进行后续分析。
 
@@ -1541,11 +1541,11 @@ for i in range(len(data_change_down)):
 f.close()
 ```
 
-**output: **
+**output:**
 WT样本的:`merge_down.fasta`、`merge_up.fasta`
 UVR8突变体的:`merge_down.fasta`、`merge_up.fasta`
 
-![merge_down.fasta.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/b5e34a112131e0e0920d5213a5267aacb3e6e907/Images/merge_down.fasta.png)
+![10.4.6.merge_down.fasta.png](../../.gitbook/assets/10.4.6.merge_down.fasta.png)
 
 第一行为转录本名称，所在部位、起始位置、上调还是下调。
 第二行为具体的核苷酸序列。
@@ -1554,11 +1554,11 @@ UVR8突变体的:`merge_down.fasta`、`merge_up.fasta`
 我们利用MEME在线版进行motif分析，地址为[http://meme-suite.org/tools/meme](http://meme-suite.org/tools/meme)。
 使用MEME的Motif discovery工具，预测输入序列上的motif信息
 
-![MEME.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/b5e34a112131e0e0920d5213a5267aacb3e6e907/Images/MEME.png)
+![10.4.7.MEME.png](../../.gitbook/assets/10.4.7.MEME.png)
 
 我们上传merge_down.fasta、merge_up.fasta后提交运算。
 
-![discovery_motif.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/b5e34a112131e0e0920d5213a5267aacb3e6e907/Images/discovery_motif.png)
+![10.4.8.discovery_motif.png](../../.gitbook/assets/10.4.8.discovery_motif.png)
 
 在得到的结果中我们根据Evalue进行筛选，Sites为找到的motif在几个结构改变区域中出现过，由此可以计算出该motif的覆盖率。我们选择覆盖率较高的motif，这里取大于4%。
 
@@ -2141,7 +2141,7 @@ java -jar /data/zhaoyizi/software/beam/BEAM_release2.5.0.jar -f merge_up_nouv_re
 我们根据`merge_up_nouv_ready_summary.txt`文件可以得到过滤后motif的`pvalueMW'，'AUC`，`qBEAR`。
 另外我们在`~/results/merge_down_nouv_ready/benchmark/motifs/*_ready_m1_run1.txt`中找到每个motif对应的结果改变区域的具体信息。
 
-![weblogo结构绘图.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/b5e34a112131e0e0920d5213a5267aacb3e6e907/Images/weblogo%E7%BB%93%E6%9E%84%E7%BB%98%E5%9B%BE.png)
+![10.4.9.weblogo.png](../../.gitbook/assets/10.4.9.weblogo.png)
 
 **3.绘图**
 我们利用weblogo进行结构motif绘图。我们对每个过滤后的motif进行绘图。
@@ -2154,7 +2154,7 @@ weblogo -a 'ZAQXSWCDEVFRBGTNHY' -f merge_up_ck_ready_m1_run1_wl.fa  -D fasta \
 -C limegreen NHY 'InternalLoopBranch'
 ```
 
-![weblogo3.6.0.png](https://github.com/zyz-hust/RNA-Structure-Mediate-regulation/blob/b5e34a112131e0e0920d5213a5267aacb3e6e907/Images/weblogo3.6.0.png)
+![10.4.10.weblogo3.6.0.png](../../.gitbook/assets/10.4.10.weblogo3.6.0.png)
 
 图中为每个位点qBEAR，不同字母的大小代表这个位点为该字母的可能性（因为motif允许一定错配），字母含义为motif结构编码，Z:big Stem,A:medial Stem,Q:small Stem,X:big Loop,S:medial Loop,W:small Loop,C:big InternalLoop,D:medial InternalLoop,E:small InternalLoop,V:big StemBranch,F:medial StemBranch,R:small StemBranch,B:Bulge,G:BulgeBranch,T:Branching,N:big InternalLoopBranch,H:medial InternalLoopBranch,Y:small InternalLoopBranch
 
